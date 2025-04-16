@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: Vm1
+  name: Azure_self
 
 steps:
 - script: echo Hello, world!
