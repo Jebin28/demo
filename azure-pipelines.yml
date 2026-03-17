@@ -7,12 +7,13 @@ trigger:
 - main
 
 pool:
-  name: Azure_self
+  name: Devops
 
 steps:
 - script: |
     echo Hello, world!
-  displayName: 'Run a one-line script'
+    echo Welcome Jebin lets start the devops and learn
+  displayName: 'Run a multi-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
