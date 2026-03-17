@@ -10,7 +10,8 @@ pool:
   name: Azure_self
 
 steps:
-- script: echo Hello, world!
+- script: |
+    echo Hello, world!
   displayName: 'Run a one-line script'
 
 - script: |
