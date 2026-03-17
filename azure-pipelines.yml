@@ -4,20 +4,20 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- none
 
 pool:
   name: Devops
 
-variables:
- -myvar: $(my_var)
+variables: 
+ - group: my_variables  
 
 steps:
 - script: |
     echo Hello, world!
-    echo Welcome Jebin lets start the devops and learn
-    echo my_var
-  displayName: 'Run a multi-line script'
+    echo $(my_var)
+    echo hi jebin
+  displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
