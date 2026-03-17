@@ -9,10 +9,14 @@ trigger:
 pool:
   name: Devops
 
+variables:
+ -myvar: $(my_var)
+
 steps:
 - script: |
     echo Hello, world!
     echo Welcome Jebin lets start the devops and learn
+    echo my_var
   displayName: 'Run a multi-line script'
 
 - script: |
